@@ -5,6 +5,22 @@
 // Note that multiple kids can have the greatest number of candies.
 
 
+// O(N) TIME ALGORITHM
+class Solution {
+    public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        ArrayList <Boolean> list=new ArrayList<Boolean>();
+        int max=0;
+        for(int i=0;i<candies.length;i++){
+            if(candies[i]>max) max=candies[i]; 
+        }
+        for(int i=0;i<candies.length;i++){
+            if((candies[i]+extraCandies)>=max) list.add(true);
+            else list.add(false);
+        }
+        return list;
+    }
+}
+// O(N^2) TIME ALGORITHM
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         ArrayList <Boolean> list=new ArrayList<Boolean>();
