@@ -16,14 +16,14 @@
 class Solution {
     boolean flag=false;
     public boolean findTarget(TreeNode root, int k) {
-        ArrayList <Integer> list=new ArrayList<>();
-        return solve(root, k, list);
+        Set<Integer> set = new HashSet();
+        return solve(root, k, set);
     }
-    public boolean solve(TreeNode root, int k, ArrayList<Integer> list){
+    public boolean solve(TreeNode root, int k, Set set){
         if(root==null) return false;
-        if(list.contains(root.val)) return true;
-        list.add(k-root.val);
-        return solve(root.left,k,list) || solve(root.right,k,list);
+        if(set.contains(root.val)) return true;
+        set.add(k-root.val);
+        return solve(root.left,k,set) || solve(root.right,k,set);
         
     }
 }
