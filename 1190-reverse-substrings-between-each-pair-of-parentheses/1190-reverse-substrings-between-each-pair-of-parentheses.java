@@ -6,7 +6,6 @@ class Solution {
 	            reverse(stack);
 	        else
 	            stack.push(ch); 
-	        
         }
 	        String ans="";
 	        while(!stack.isEmpty())
@@ -14,16 +13,16 @@ class Solution {
 	        
             StringBuilder sb = new StringBuilder(ans);
             return sb.reverse().toString();
-        }
-         public void reverse(Stack<Character> stack){
+    }
+    
+    public void reverse (Stack<Character> stack){
             String temp= "";
-	            do{
-	                temp+=stack.pop();
-	            }while(temp.charAt(temp.length()-1)!='(');
+	        do{
+	            temp+=stack.pop();
+	        }while(temp.charAt(temp.length()-1)!='(');
 	        
-	            for(int i=0;i<temp.length()-1;i++) 
-	                    stack.push(temp.charAt(i));
-	            
+	        for(int i=0;i<temp.length()-1;i++) 
+	            stack.push(temp.charAt(i));
         }
 	}
 	      
