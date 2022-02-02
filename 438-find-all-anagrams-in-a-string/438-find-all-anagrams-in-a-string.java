@@ -4,29 +4,25 @@ class Solution {
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> list =new ArrayList<>();
         
-        int shash[]= new int[26];
-        for(int i=0;i<p.length();i++){
-            char c=p.charAt(i);
-            shash[c-'a']+=1;
-        }
+        int s_hash[]= new int[26];
+        for(char c : p.toCharArray())
+            s_hash[c-'a']+=1;
         
-        int plen=p.length();
-        int slen=s.length();
-        
-        for(int i=0;i<=slen-plen;i++){
-            int b[] = Arrays.copyOf(shash, shash.length);
+       
+        for(int i=0;i<=s.length()-p.length();i++){
+            int s_hash_copy[] = Arrays.copyOf(s_hash, s_hash.length);
 
-            String sub=s.substring(i,i+plen);
+            String sub=s.substring(i,i+p.length());
             boolean flag=true;
-            for(int j=0;j<plen;j++){
+            for(int j=0;j<p.length();j++){
                 int idx=sub.charAt(j)-'a';
-                if( b[idx]==0 ){
+                if( s_hash_copy[idx]==0 ){
                     flag=false;
                     break;
                 }
                     
                 else
-                    b[idx]-=1;
+                    s_hash_copy[idx]-=1;
                     
                     
             }
