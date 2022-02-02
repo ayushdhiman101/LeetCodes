@@ -14,22 +14,18 @@ class Solution {
 
             String sub=s.substring(i,i+p.length());
             boolean flag=true;
+            
             for(int j=0;j<p.length();j++){
                 int idx=sub.charAt(j)-'a';
                 if( s_hash_copy[idx]==0 ){
                     flag=false;
                     break;
                 }
-                    
                 else
                     s_hash_copy[idx]-=1;
-                    
-                    
             }
             if(flag==true) list.add(i);
         }
-            
-    
         return list;   
     }
 }
