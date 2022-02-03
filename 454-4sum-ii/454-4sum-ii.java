@@ -6,22 +6,19 @@ class Solution {
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 int sum=nums1[i]+nums2[j];
-                map.put(sum, map.getOrDefault(sum, 0)+1);
-                // if(map.containsKey(sum)){
-                //     map.put(sum,map.get(sum)+1);
-                // }
-                // else
-                //     map.put(sum,1);
+                if(map.containsKey(sum)){
+                    map.put(sum,map.get(sum)+1);
+                }
+                else
+                    map.put(sum,1);
             }
         }
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 int sum=nums3[i]+nums4[j];
-                // if(map.containsKey(-sum)){
-                //     count+=map.get(sum);
-                // }
-                count += map.getOrDefault(-sum,0);
-                    
+                if(map.containsKey(-sum) ){
+                    count+=map.get(-sum);
+                }
             }   
         }
         return count;
