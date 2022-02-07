@@ -1,16 +1,30 @@
 class Solution {
     public char findTheDifference(String s, String t) {
         
-        char arr1[]=s.toCharArray();
-        char arr2[]=t.toCharArray();
-        Arrays.sort(arr1);
-        Arrays.sort(arr2);
-        if(arr1.length==0) return arr2[0];
-        for(int i=0;i<arr1.length;i++){
-            if(arr1[i]!=arr2[i])
-                return arr2[i];
+        
+        int ascii = 0;
+        
+        for(int i=0; i<s.length(); i++){
+            ascii += t.charAt(i);
+            ascii -= s.charAt(i);
         }
-        return arr2[arr2.length-1];
+        
+        ascii += t.charAt(s.length());
+        
+        return (char)ascii;
+    
+        
+        
+//         char arr1[]=s.toCharArray();
+//         char arr2[]=t.toCharArray();
+//         Arrays.sort(arr1);
+//         Arrays.sort(arr2);
+//         if(arr1.length==0) return arr2[0];
+//         for(int i=0;i<arr1.length;i++){
+//             if(arr1[i]!=arr2[i])
+//                 return arr2[i];
+//         }
+//         return arr2[arr2.length-1];
         
         
         
