@@ -14,7 +14,7 @@ class Solution {
             else if(hash.containsKey(i) && hash.get(i)==0){
                 return i;
             }
-            else if (!(hash.containsKey(i))){
+            else {
                 return i;
             }
         return 'N';  
