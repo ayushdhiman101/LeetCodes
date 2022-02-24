@@ -1,9 +1,8 @@
 class Solution {
-    
+    boolean flag=true;
     public boolean isBalanced(TreeNode root) {
-    int res=check(root);
-    if(res==-1) return false;
-    return true;
+        check(root);
+        return flag;
     }
     
     int check(TreeNode root){
@@ -11,9 +10,8 @@ class Solution {
         int left=check(root.left);
         int right=check(root.right);
 
-        if(left==-1 || right==-1) return -1;
-        if(Math.abs(left-right)>1) return -1;
-        else return Math.max(left,right)+1;
-
+        if(Math.abs(left-right)>1) flag=false;
+        
+        return 1+Math.max(left,right);
     }
 }
