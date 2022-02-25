@@ -28,7 +28,7 @@ class Solution {
         if(left<0) left=0;
         if(right<0) right=0;
         max=Math.max(left+right+root.val,max);
-        return root.val+Math.max(left,right);
+        return root.val + Math.max(left,right);
         
     }
 }
