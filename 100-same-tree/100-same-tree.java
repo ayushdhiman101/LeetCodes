@@ -20,18 +20,16 @@ class Solution {
         return flag;
     }
 
-public boolean tree(TreeNode p, TreeNode q) {
-        if (p==null && q==null) return true;
+public void tree(TreeNode p, TreeNode q) {
+        if (p==null && q==null) return ;
         
         if ((p==null||q==null)||(p.val!=q.val && p!=q)) {
             flag=false;
-            return false;
+            return ;
         }
     
-        
         tree(p.left,q.left);
         tree(p.right,q.right);
         
-
-        return true;
+        return;
     }}
