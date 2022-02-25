@@ -16,20 +16,21 @@
 class Solution {
     boolean flag=true;
     public boolean isSameTree(TreeNode p, TreeNode q) {
-         tree(p,q);
+        tree(p,q);
         return flag;
     }
 
 public void tree(TreeNode p, TreeNode q) {
-        if (p==null && q==null) return ;
+        if (p==null && q==null) return;
         
         if ((p==null||q==null)||(p.val!=q.val && p!=q)) {
             flag=false;
-            return ;
+            return;
         }
     
         tree(p.left,q.left);
         tree(p.right,q.right);
         
         return;
-    }}
+    }
+}
