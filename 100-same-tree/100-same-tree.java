@@ -23,7 +23,7 @@ class Solution {
 public void tree(TreeNode p, TreeNode q) {
         if (p==null && q==null) return;
         
-        if ((p==null||q==null)||(p.val!=q.val && p!=q)) {
+        if ((p==null||q==null)||(p.val!=q.val )) {
             flag=false;
             return;
         }
