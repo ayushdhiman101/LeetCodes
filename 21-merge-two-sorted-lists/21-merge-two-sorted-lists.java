@@ -21,52 +21,29 @@ class Solution {
             return l1;
                 
         while(l1!=null && l2!=null ){
-            //if(l2==null) break;
-            //if(l1==null) break;
             
             if(l1.val<l2.val){
-                ListNode newNode=new ListNode(l1.val);
-                ptr.next=newNode;
-                ptr=ptr.next;
+                ptr.next=l1;
                 l1=l1.next;
-            }
-            else if(l1.val>l2.val){
-                ListNode newNode=new ListNode(l2.val);
-                ptr.next=newNode;
-                ptr=ptr.next;
-                l2=l2.next;
             }
             else{
-                ListNode newNode=new ListNode(l2.val);
-                ListNode newNode2=new ListNode(l2.val);
-
-                ptr.next=newNode;
-                ptr=ptr.next;
-                ptr.next=newNode2;
-                ptr=ptr.next;
-                l1=l1.next;
+                ptr.next=l2;
                 l2=l2.next;
             }
+            
+            ptr=ptr.next;
         }
         
-        if(l1==null && l2!=null){
-            while(l2!=null){
-                ListNode newNode=new ListNode(l2.val);
-                ptr.next=newNode;
-                ptr=ptr.next;
-                l2=l2.next;
-            }
+        if(l1==null && l2!=null)
+            ptr.next=l2;
             
-        }
-        if(l2==null && l1!=null){
-            while(l1!=null){
-                ListNode newNode=new ListNode(l1.val);
-                ptr.next=newNode;
-                ptr=ptr.next;
-                l1=l1.next;
-            }
             
-        }
+        
+        if(l2==null && l1!=null)
+            ptr.next=l1;
+            
+            
+        
        return ans.next; 
     }
 }
