@@ -13,7 +13,6 @@ class Solution {
 
         ListNode newList=new ListNode(-1);
         ListNode ptr=newList;
-        ListNode ans=newList;
         
         if(l1==null) 
             return l2;
@@ -21,7 +20,6 @@ class Solution {
             return l1;
                 
         while(l1!=null && l2!=null ){
-            
             if(l1.val<l2.val){
                 ptr.next=l1;
                 l1=l1.next;
@@ -30,7 +28,6 @@ class Solution {
                 ptr.next=l2;
                 l2=l2.next;
             }
-            
             ptr=ptr.next;
         }
         
@@ -44,6 +41,6 @@ class Solution {
             
             
         
-       return ans.next; 
+       return newList.next; 
     }
 }
