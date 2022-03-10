@@ -108,7 +108,6 @@ class GFG
 
 class Solution{
     ArrayList <Integer> list=new ArrayList <Integer>();
-    Stack<Integer> stack=new Stack<>();
 	ArrayList <Integer> boundary(Node root){
 	    if(root==null) return list;
 	    if(root.left==null && root.right==null){
@@ -119,8 +118,7 @@ class Solution{
 	    leftBoundry(root.left);
 	    inorder(root);
 	    rightRevBoundry(root.right);
-	    while(!stack.isEmpty())
-	        list.add(stack.pop());
+	    
 	    return list;
 	    
 	}
