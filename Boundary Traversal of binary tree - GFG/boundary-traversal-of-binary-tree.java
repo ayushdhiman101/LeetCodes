@@ -146,12 +146,12 @@ class Solution{
 	void rightRevBoundry(Node root){
 	    if(root==null) return;
 	    if(root.right!=null){
-	        stack.add(root.data);
 	        rightRevBoundry(root.right);
+	        list.add(root.data);
 	    }
 	    else if(root.left!=null){
-	        stack.add(root.data);
 	        rightRevBoundry(root.left);
+	        list.add(root.data);
 	    }
 	}
 }
