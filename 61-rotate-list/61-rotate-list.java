@@ -26,9 +26,9 @@ class Solution {
             temp=temp.next;
             b--;
         } 
-        ListNode nextNode=temp;
-        if(temp.next!=null)
-             nextNode=temp.next;
+       // ListNode nextNode=temp;
+       // if(temp.next!=null)
+            ListNode nextNode=temp.next;
         ListNode ans=nextNode;
         while(nextNode.next!=null) nextNode=nextNode.next;
         
