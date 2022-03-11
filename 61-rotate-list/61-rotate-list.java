@@ -12,32 +12,32 @@ class Solution {
     public ListNode rotateRight(ListNode head, int k) {
         if(head==null || k==0) return head;
         ListNode temp = head;
-        int count=0;
+        int size=0;
         while(temp!=null){
-            count++;
+            size++;
             temp=temp.next;
         }
-        k = k % count;
+        k = k % size;
+        
         if(k==0) return head;
         
-        int b=count-k-1;
+        int rem=size-k-1;
         temp=head;
-        while(temp.next!=null && b!=0){
+        while(temp.next!=null && rem!=0){
             temp=temp.next;
-            b--;
+            rem--;
         } 
-       // ListNode nextNode=temp;
-       // if(temp.next!=null)
-            ListNode nextNode=temp.next;
-        ListNode ans=nextNode;
+       
+        ListNode nextNode=temp.next;
+        temp.next=null;
+        ListNode newHead = nextNode;
         while(nextNode.next!=null) nextNode=nextNode.next;
         
         nextNode.next=head;
-        temp.next=null;
         
         
         
-        return ans;
+        return newHead ;
         
     }
 }
