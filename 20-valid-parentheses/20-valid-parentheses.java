@@ -4,8 +4,8 @@ class Solution {
         map.put('}','{');
         map.put(')','(');
         map.put(']','[');
-        Stack <Character> stack = new Stack  <>();
         
+        Stack <Character> stack = new Stack  <>();
         for(int i=0;i<s.length();i++){
             char str=s.charAt(i);
             if(map.containsKey(str)){
@@ -18,8 +18,7 @@ class Solution {
                 stack.add(str);
             }
         
-        if(stack.isEmpty()) return true;
-        else return false;
+        return stack.isEmpty() ?  true :  false;
         
     }
 }
