@@ -125,45 +125,44 @@ class Node{
 
 class Solution
 {
-   //Function to return a list of nodes visible from the top view 
-   //from left to right in Binary Tree.
-   
-   static ArrayList<Integer> topView(Node root)
-   {
-      int h=height(root);
-       ArrayList<Integer> a=new ArrayList<Integer>();
-    HashMap<Integer, Integer> map = new HashMap<>();
-      int y,i;
-      for(i=1;i<=h;i++){
-          y=0;
-         levelorder(root,i,y,map);
-      }
-      ArrayList<Integer> sortedKeys= new ArrayList<Integer>(map.keySet());
-      Collections.sort(sortedKeys);
-     for(i=0;i<sortedKeys.size();i++)
-      {   //a.add(sortedKeys.get(i));
-          a.add(map.get(sortedKeys.get(i)));
-      }
-      return a;
-      
-   }
-   static void levelorder(Node root,int x,int y,HashMap<Integer, Integer> map){
-       if(root== null) return ;
-       else{
-           if(x==1) {
-               if(map.containsKey(y)==false){
-               map.put(y,root.data);}
-           }
-           else{
-              if(root.left!=null) levelorder(root.left,x-1,y-1,map);
-              if(root.right!=null) levelorder(root.right,x-1,y+1,map);
-           }
-       }
-   }
-   static int height(Node root){
-       if(root==null) return 0;
-          return 1+Math.max(height(root.left),height(root.right));
-   }
-   }
-
- 
+    //Function to return a list of nodes visible from the top view 
+    //from left to right in Binary Tree.
+    static ArrayList<Integer> topView(Node root)
+    {
+        ArrayList<Integer> ans = new ArrayList<>(); 
+        if(root == null) return ans;
+        Map<Integer, Integer> map = new TreeMap<>();
+        Queue<Pair> q = new LinkedList<Pair>();
+        q.add(new Pair(root, 0)); 
+        while(!q.isEmpty()) {
+            Pair it = q.remove();
+            int hd = it.hd; 
+            Node temp = it.node; 
+            if(map.get(hd) == null) map.put(hd, temp.data); 
+            if(temp.left != null) {
+                
+                q.add(new Pair(temp.left, hd - 1)); 
+            }
+            if(temp.right != null) {
+                
+                q.add(new Pair(temp.right, hd + 1)); 
+            }
+        }
+    
+        for (Map.Entry<Integer,Integer> entry : map.entrySet()) {
+            ans.add(entry.getValue()); 
+        }
+        return ans; 
+        
+    }
+    static class Pair{
+        Node node;
+        int hd;
+        
+        Pair(Node root,int width){
+            node=root;
+            hd=width;
+        }
+        
+    }
+}
