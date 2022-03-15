@@ -28,6 +28,7 @@ class Solution {
         Map <Integer,Integer> map = new TreeMap<>();
         Queue <Pair> q= new LinkedList<>();
         q.add(new Pair(root,0));
+        
         while(!q.isEmpty()){
               Pair it = q.poll();
               TreeNode node= it.node;
