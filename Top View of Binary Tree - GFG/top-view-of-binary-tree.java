@@ -135,7 +135,7 @@ class Solution
         Queue<Pair> q = new LinkedList<Pair>();
         q.add(new Pair(root, 0)); 
         while(!q.isEmpty()) {
-            Pair it = q.remove();
+            Pair it = q.poll();
             int hd = it.hd; 
             Node temp = it.node; 
             if(!map.containsKey(hd)) map.put(hd, temp.data); 
