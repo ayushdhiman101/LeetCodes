@@ -118,11 +118,9 @@ class GfG {
 class Pair {
     Node node;
     int hd;
-    int l;
-    Pair(Node root, int width, int level){
+    Pair(Node root, int width){
         node=root;
         hd=width;
-        l=level;
     }
 }
 
@@ -134,18 +132,17 @@ class Solution
         ArrayList <Integer> list = new ArrayList<>();
         Map <Integer,Integer> map = new TreeMap<>();
         Queue<Pair> q = new LinkedList <Pair>();
-        q.add(new Pair(root,0,0));
+        q.add(new Pair(root,0));
         while(!q.isEmpty()){
             Pair it = q.poll();
             Node temp = it.node;
             int width = it.hd;
-            int level = it.l;
-            
+
             map.put(width,temp.data);
             if(temp.left!=null)
-                q.add(new Pair(temp.left,width-1,level+1));
+                q.add(new Pair(temp.left,width-1));
             if(temp.right!=null)
-                q.add(new Pair(temp.right,width+1,level+1));
+                q.add(new Pair(temp.right,width+1));
         }
     for (Map.Entry<Integer,Integer> entry : map.entrySet()) {
             list.add(entry.getValue()); 
