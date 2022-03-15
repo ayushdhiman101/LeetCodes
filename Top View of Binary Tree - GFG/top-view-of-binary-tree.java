@@ -138,7 +138,7 @@ class Solution
             Pair it = q.remove();
             int hd = it.hd; 
             Node temp = it.node; 
-            if(map.get(hd) == null) map.put(hd, temp.data); 
+            if(!map.containsKey(hd)) map.put(hd, temp.data); 
             if(temp.left != null) {
                 
                 q.add(new Pair(temp.left, hd - 1)); 
