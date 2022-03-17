@@ -13,8 +13,7 @@ class Solution {
     boolean flag= false;
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
         parent(root);
-        //solve(root,target,k,flag);
-        traversal (target , k);
+        solve (target , k);
         return list;
         
     }
@@ -35,20 +34,7 @@ class Solution {
             }
         }
     }
-    
-     // public void solve(TreeNode root, TreeNode target, int k ,boolean flag){
-     //     if(root == null || flag == true) return;
-     //     if(root == target) {
-     //         traversal(root,  target,  k);
-     //         flag = true;
-     //         return;
-     //     }
-     //     solve(root.left , target , k, flag);
-     //     solve(root.right , target , k, flag);
-     //     return ;
-     // }
-    
-    public void traversal(TreeNode target, int k){
+    public void solve(TreeNode target, int k){
         
         Queue <TreeNode> q = new LinkedList <>(); 
         List <TreeNode> visited = new ArrayList <>();
@@ -77,7 +63,6 @@ class Solution {
             }
             k--;
         }
-        
         while(!q.isEmpty()){
             list.add(q.poll().val);
         }
