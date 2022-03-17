@@ -10,7 +10,6 @@
 class Solution {
     HashMap <TreeNode, TreeNode> map = new HashMap <>();
     List <Integer> list = new ArrayList <>();
-    boolean flag= false;
     public List<Integer> distanceK(TreeNode root, TreeNode target, int k) {
         parent(root);
         solve (target , k);
@@ -63,9 +62,8 @@ class Solution {
             }
             k--;
         }
-        while(!q.isEmpty()){
+        while(!q.isEmpty())
             list.add(q.poll().val);
-        }
     }
 }
 
