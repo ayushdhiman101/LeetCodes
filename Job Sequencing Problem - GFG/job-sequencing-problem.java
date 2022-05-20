@@ -53,8 +53,8 @@ class Solution
             max=Math.max(max,arr[i].deadline);
         }
         int job []=new int[max+1];
-        int count =0;
-        int profit=0;
+        int count =0,profit=0;
+        
         for(int i=0;i<n;i++){
             for(int j=arr[i].deadline;j>0;j--){
                 if(job[j]!=1){
@@ -65,7 +65,7 @@ class Solution
                 }
             }
         }
-        int ans []={count,profit};
-        return ans;
+        //int ans []={count,profit};
+        return new int[] {count,profit};
     }
 }
