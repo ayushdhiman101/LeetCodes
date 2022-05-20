@@ -63,7 +63,6 @@ class Solution
                 plat_needed--; 
                 j++; 
             } 
-  
             result=Math.max(result,plat_needed);
         } 
         return result; 
