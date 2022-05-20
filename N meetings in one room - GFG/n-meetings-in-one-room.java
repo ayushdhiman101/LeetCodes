@@ -35,10 +35,10 @@ class meeting{
     int start;
     int end;
     int index;
-    meeting(int start , int end, int index){
-        this.start=start;
-        this.end=end;
-        this.index=index;
+    meeting(int st , int en, int ind){
+        this.start=st;
+        this.end=en;
+        this.index=ind;
     }
 }
 class meetingComparator implements Comparator<meeting>
@@ -50,8 +50,7 @@ class meetingComparator implements Comparator<meeting>
             return -1;
         else if (o1.end > o2.end)
             return 1;
-        else if(o1.index < o2.index)
-            return -1;
+       
         return 1; 
     }
 }
