@@ -33,7 +33,6 @@ class GFG
 //User function Template for Java//User function Template for Java
 class Solution{
     ArrayList<Integer> subsetSums(ArrayList<Integer> arr, int N){
-        // code here
         ArrayList<Integer> ans = new ArrayList<>();
         solve(arr,ans,0,0);
         return ans;
@@ -44,9 +43,8 @@ class Solution{
             return;
         }
         
-        //ans.add(sum);
         solve(arr,ans,i+1,sum);
-        solve(arr,ans,i+1,sum+=arr.get(i));
+        
         
         return;
     }
