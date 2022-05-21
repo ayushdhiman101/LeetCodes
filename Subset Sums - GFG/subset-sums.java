@@ -42,7 +42,7 @@ class Solution{
             ans.add(sum);
             return;
         }
-        
+        solve(arr,ans,i+1,sum+arr.get(i));
         solve(arr,ans,i+1,sum);
         
         
