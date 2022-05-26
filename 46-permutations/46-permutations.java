@@ -8,9 +8,8 @@ class Solution {
     public void solve(int[] nums, List<List<Integer>> ans , int i) {
        if (i==nums.length) {
             List <Integer> op = new ArrayList <> ();
-            for (int j=0;j<nums.length;j++) 
-                op.add(nums[j]);
-            
+            for (int j:nums) 
+                op.add(j);
             ans.add(op);
             return;
         }
