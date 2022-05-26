@@ -6,17 +6,17 @@ class Solution {
         return ans;
     }
     public void solve(int[] nums, List<List<Integer>> ans , int i) {
-       if (i == nums.length) {
-            List < Integer > ds = new ArrayList < > ();
-            for (int k = 0; k < nums.length; k++) {
-                ds.add(nums[k]);
-            }
-            ans.add(new ArrayList < > (ds));
+       if (i==nums.length) {
+            List <Integer> op = new ArrayList <> ();
+            for (int j=0;j<nums.length;j++) 
+                op.add(nums[j]);
+            
+            ans.add(op);
             return;
         }
         
         for (int j = i; j < nums.length; j++) {
-            swap(nums,i,j );
+            swap(nums,i,j);
             solve(nums,ans,i + 1);
             swap(nums,i,j);
         }
