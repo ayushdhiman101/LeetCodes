@@ -38,7 +38,7 @@ class Solution {
         // Your code here
         ArrayList <String> ans = new ArrayList <> ();
         int [][] vis = new int[n][n];
-        if (m[0][0]==1) solve(0,0,m,n,ans,"",vis);
+        if (m[0][0]==1 && m[n-1][n-1]==1) solve(0,0,m,n,ans,"",vis);
         return ans;
     }
     private static void solve(int i,int j,int a[][],int n,ArrayList <String> ans,String move,int vis[][]) {
