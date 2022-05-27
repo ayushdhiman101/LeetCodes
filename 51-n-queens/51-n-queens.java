@@ -17,26 +17,30 @@ class Solution {
         
     }
     
-     public void solve(int n, List<List<String>> ans, String [][] board,int col ,int[]leftrow, int[]lowerDiagonal, int[]upperDiagonal) {
+     public void solve(int n, List<List<String>> ans, String [][] board,int col ,int[]leftRow, int[]lowerDiagonal, int[]upperDiagonal) {
          if(col==n){
             List<String> list =new ArrayList<>(convert(board,n));
             ans.add(list);
             return;
         }
         
-         for (int row = 0; row < n; row++) {
-        if (leftrow[row] == 0 && lowerDiagonal[row + col] == 0 && upperDiagonal[n - 1 + col - row] == 0) {
-          board[row][col] = "Q";
-          leftrow[row] = 1;
-          lowerDiagonal[row + col] = 1;
-          upperDiagonal[n - 1 + col - row] = 1;
-          solve(n, ans,board,col+1, leftrow,lowerDiagonal, upperDiagonal);
-          board[row][col] = ".";
-          leftrow[row] = 0;
-          lowerDiagonal[row + col] = 0;
-          upperDiagonal[n - 1 + col - row] = 0;
-        }
-      }
+         for(int row=0;row<n;row++){
+             if(leftRow[row]==0 && lowerDiagonal[row+col]==0 && upperDiagonal[n-1+col-row]==0){
+                 
+                 board[row][col]="Q";
+                 leftRow[row]=1;
+                 lowerDiagonal[row+col]=1;
+                 upperDiagonal[n-1+col-row]=1;
+                     
+                 solve(n,ans,board,col+1,leftRow,lowerDiagonal,upperDiagonal);
+                 
+                 board[row][col]=".";
+                 leftRow[row]=0;
+                 lowerDiagonal[row+col]=0;
+                 upperDiagonal[n-1+col-row]=0;
+                 
+              }
+         }
     }
 //     public boolean check(int row,int col, String [][] board ,int n) {
 //         int duprow=row,dupcol=col;
