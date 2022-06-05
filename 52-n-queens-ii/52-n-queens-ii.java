@@ -2,11 +2,13 @@ class Solution {
     int count=0;
     public int totalNQueens(int n) {
         int board[][] = new int[n][n];
+        
         int left[]=new int[n];
         int leftUpper[]=new int[2*n-1];
         int leftLower[]=new int[2*n-1];
         
         solve(n,board,0,left,leftUpper,leftLower);
+        
         return count;
     }
     public void solve(int n,int board[][],int col,int left[],int leftUpper[],int leftLower[]){
@@ -30,6 +32,5 @@ class Solution {
                 
             }
         }
-        
     }
 }
