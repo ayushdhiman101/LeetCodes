@@ -53,7 +53,7 @@ class Solution
            int par = q.peek().second;
            q.remove(); 
            
-           for(Integer it: adj.get(node))
+           for(int it: adj.get(node))
            {
                if(vis[it]==false)  
                {
