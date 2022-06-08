@@ -50,13 +50,13 @@ class Solution
     public boolean solve( ArrayList<ArrayList<Integer>>adj,int colors[],int i){
         Queue <Integer> q = new LinkedList<>();
         q.add(i);
-        colors[i]=1;
+        colors[i]=0;
         while(!q.isEmpty()){
             int node = q.poll();
             for(int it:adj.get(node)){
                 if(colors[it]==-1){
                     q.add(it);
-                    colors[it]=1-colors[node];                    
+                    colors[it]=1+colors[node];                    
                 }
                 else if(colors[it]==colors[node])
                     return false;
