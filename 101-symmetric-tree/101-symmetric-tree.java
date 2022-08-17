@@ -14,18 +14,14 @@
  * }
  */
 class Solution {
-    //boolean flag = true;
     public boolean isSymmetric(TreeNode root) {
-       return helper(root.left,root.right);
-        
+        return solve(root.left,root.right);
     }
-    public boolean helper(TreeNode l, TreeNode r) {
-        if(l == null || r == null) 
-            return l==r;
-        if(l.val != r. val) return false;
+    public boolean solve(TreeNode left, TreeNode right) {
+        if(left==null && right==null) return true;
+        if((left == null && right!=null) || (left!=null &&right==null) || left.val!=right.val) return false;
         
-        return helper(l.left,r.right) && helper(l.right,r.left);
-        
+        return solve(left.left,right.right) && solve(left.right,right.left);
         
     }
 }
