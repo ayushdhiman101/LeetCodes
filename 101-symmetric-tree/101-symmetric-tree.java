@@ -21,7 +21,10 @@ class Solution {
         if(left==null && right==null) return true;
         if((left == null && right!=null) || (left!=null &&right==null) || left.val!=right.val) return false;
         
-        return solve(left.left,right.right) && solve(left.right,right.left);
+        boolean l= solve(left.left,right.right);
+        boolean r = solve(left.right,right.left);
+        
+        return l && r;
         
     }
 }
