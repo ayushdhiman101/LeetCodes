@@ -1,51 +1,58 @@
 class Solution {
+    List<List<String>> ans = new ArrayList<>();
     public List<List<String>> solveNQueens(int n) {
-        List<List<String>> ans = new ArrayList<>();
-       String [][] board = new String [n][n];
+        String board[][] = new String [n][n];
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
                 board[i][j]=".";
             }
         }
-        
-        int[] leftRow= new int[n];
-        int[] lowerDiagonal= new int[2*n-1];
-        int[] upperDiagonal= new int[2*n-1];
-        
-        solve(n,ans,board,0 , leftRow,lowerDiagonal,upperDiagonal);
+        solve(board,0);
         return ans;
-        
     }
-    
-     public void solve(int n, List<List<String>> ans, String [][] board,int col ,int[]leftRow, int[]lowerDiagonal, int[]upperDiagonal) {
-         if(col==n){
-            List<String> list =new ArrayList<>(convert(board,n));
+    public void solve(String board [][], int j) {
+        if(j==board.length){
+            ArrayList<String> list = new ArrayList<>(convert(board));
             ans.add(list);
             return;
         }
-        
-         for(int row=0;row<n;row++){
-             if(leftRow[row]==0 && lowerDiagonal[row+col]==0 && upperDiagonal[n-1+col-row]==0){
-                 
-                 board[row][col]="Q";
-                 leftRow[row]=1;
-                 lowerDiagonal[row+col]=1;
-                 upperDiagonal[n-1+col-row]=1;
-                     
-                 solve(n,ans,board,col+1,leftRow,lowerDiagonal,upperDiagonal);
-                 
-                 board[row][col]=".";
-                 leftRow[row]=0;
-                 lowerDiagonal[row+col]=0;
-                 upperDiagonal[n-1+col-row]=0;
-                 
-              }
-         }
+        for(int row=0;row<board.length;row++){
+            if(check(board,row,j)){
+                board[row][j]="Q";
+                solve(board,j+1);
+                board[row][j]=".";
+            }
+        }
     }
-
-    public List<String> convert(String [][] board ,int n) {
+    public boolean check(String board [][], int i,int j) {
+        int tempi=i,tempj=j;
+        while(j>=0){
+             if(board[i][j]=="Q")
+                 return false;
+            j--;
+        }
+        
+        j=tempj;
+         while(i>=0 && j>=0){
+             if(board[i][j]=="Q")
+                 return false;
+            i--;
+            j--;
+        }
+        
+        i=tempi;j=tempj;
+        while(i<board.length  && j>=0){
+             if(board[i][j]=="Q")
+                 return false;
+            i++;
+            j--;
+        }
+          return true;  
+        
+    }
+     public List<String> convert(String [][] board) {
         ArrayList<String> list = new ArrayList<>();
-        for(int i=0;i<n;i++){
+        for(int i=0;i<board.length;i++){
             String [] a = board[i];
             StringBuffer sb = new StringBuffer();
             for(int j = 0; j < a.length; j++) 
@@ -55,4 +62,5 @@ class Solution {
         }
         return list;
     }
+
 }
