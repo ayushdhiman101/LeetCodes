@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/ayushdhiman101/LeetCodes/tree/master/0011-container-with-most-water) |
 | [0283-move-zeroes](https://github.com/ayushdhiman101/LeetCodes/tree/master/0283-move-zeroes) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/ayushdhiman101/LeetCodes/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/ayushdhiman101/LeetCodes/tree/master/1927-maximum-ascending-subarray-sum) |
 ## Two Pointers
 |  |
@@ -13,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/ayushdhiman101/LeetCodes/tree/master/0011-container-with-most-water) |
 | [0283-move-zeroes](https://github.com/ayushdhiman101/LeetCodes/tree/master/0283-move-zeroes) |
 | [0392-is-subsequence](https://github.com/ayushdhiman101/LeetCodes/tree/master/0392-is-subsequence) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/ayushdhiman101/LeetCodes/tree/master/1798-max-number-of-k-sum-pairs) |
 ## String
 |  |
 | ------- |
@@ -25,4 +27,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/ayushdhiman101/LeetCodes/tree/master/0011-container-with-most-water) |
+## Hash Table
+|  |
+| ------- |
+| [1798-max-number-of-k-sum-pairs](https://github.com/ayushdhiman101/LeetCodes/tree/master/1798-max-number-of-k-sum-pairs) |
+## Sorting
+|  |
+| ------- |
+| [1798-max-number-of-k-sum-pairs](https://github.com/ayushdhiman101/LeetCodes/tree/master/1798-max-number-of-k-sum-pairs) |
 <!---LeetCode Topics End-->
