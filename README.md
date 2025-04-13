@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/ayushdhiman101/LeetCodes/tree/master/0011-container-with-most-water) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/ayushdhiman101/LeetCodes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0283-move-zeroes](https://github.com/ayushdhiman101/LeetCodes/tree/master/0283-move-zeroes) |
 | [0643-maximum-average-subarray-i](https://github.com/ayushdhiman101/LeetCodes/tree/master/0643-maximum-average-subarray-i) |
 | [1046-max-consecutive-ones-iii](https://github.com/ayushdhiman101/LeetCodes/tree/master/1046-max-consecutive-ones-iii) |
@@ -26,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/ayushdhiman101/LeetCodes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0392-is-subsequence](https://github.com/ayushdhiman101/LeetCodes/tree/master/0392-is-subsequence) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/ayushdhiman101/LeetCodes/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Greedy
