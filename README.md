@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ayushdhiman101/LeetCodes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0283-move-zeroes](https://github.com/ayushdhiman101/LeetCodes/tree/master/0283-move-zeroes) |
 | [0643-maximum-average-subarray-i](https://github.com/ayushdhiman101/LeetCodes/tree/master/0643-maximum-average-subarray-i) |
+| [0724-find-pivot-index](https://github.com/ayushdhiman101/LeetCodes/tree/master/0724-find-pivot-index) |
 | [1046-max-consecutive-ones-iii](https://github.com/ayushdhiman101/LeetCodes/tree/master/1046-max-consecutive-ones-iii) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/ayushdhiman101/LeetCodes/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/ayushdhiman101/LeetCodes/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -57,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Prefix Sum
 |  |
 | ------- |
+| [0724-find-pivot-index](https://github.com/ayushdhiman101/LeetCodes/tree/master/0724-find-pivot-index) |
 | [1046-max-consecutive-ones-iii](https://github.com/ayushdhiman101/LeetCodes/tree/master/1046-max-consecutive-ones-iii) |
 | [1833-find-the-highest-altitude](https://github.com/ayushdhiman101/LeetCodes/tree/master/1833-find-the-highest-altitude) |
 <!---LeetCode Topics End-->
