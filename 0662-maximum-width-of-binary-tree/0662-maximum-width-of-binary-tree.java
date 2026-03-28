@@ -24,13 +24,13 @@ class Solution {
             int len = q.size();
             int startIdx = (int) q.peekFirst()[1];
             int endIdx = (int) q.peekLast()[1];
-            ans = Math.max(ans, startIdx - endIdx + 1);
+            ans = Math.max(ans, endIdx - startIdx + 1);
             for(int i = 0; i < len; i ++) {
-                Object[] obj = q.pollFirst();
+                Object[] obj = q.poll();
                 TreeNode node = (TreeNode) obj[0];
                 int idx =  (int) obj[1];
-                if(node.right != null) q.addLast(new Object[]{node.right, 2*idx + 2});
-                                if(node.left != null) q.addLast(new Object[]{node.left, 2*idx + 1});
+                if(node.left != null) q.offer(new Object[]{node.left, 2*idx + 1});
+                if(node.right != null) q.offer(new Object[]{node.right, 2*idx + 2});
 
              }
              currLevel ++;
