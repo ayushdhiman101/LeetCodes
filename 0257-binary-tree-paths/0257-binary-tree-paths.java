@@ -24,6 +24,7 @@ class Solution {
         if(root.left == null && root.right == null) {
             ans.add(path + root.val);
             path = "";
+            return;
         }
         path += root.val + "->";
 
