@@ -17,7 +17,7 @@ class Solution {
             return;
         }
         list.add(nums[idx]);
-        // combinationSum2(nums, target - nums[idx], idx + 1, sum, list);
+        combinationSum2(nums, target - nums[idx], idx + 1, sum, list);
         combinationSum2(nums, target - nums[idx], idx, sum, list);
 
 
