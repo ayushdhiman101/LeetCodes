@@ -1,35 +1,25 @@
 class Solution {
     public int rotatedDigits(int n) {
-        HashMap <Integer, Integer> map = new HashMap<>() {{
-            put(0, 0);
-            put(1, 1);
-            put(2, 5);
-            put(5, 2);
-            put(6, 9);
-            put(8, 8);
-            put(9, 6);
-        }};
         int count = 0;
         for (int i = 1; i <= n; i++) {
-            int [] digits = allDigits(i);
-            int allSame = 0;
-            boolean flag = false;
-            for(int j: digits) {
-                if(!map.containsKey(j)) {
-                    flag = true;
+            int num = i;
+            boolean isValid = true;
+            boolean changed = false;
+            while (num > 0) {
+                int digit = num % 10;
+
+                if(digit == 3 || digit == 4 || digit == 7) {
+                    isValid = false;
                     break;
                 }
-                if(map.get(j) == j) allSame++;
+
+                 if(digit == 2 || digit == 5 || digit == 6 || digit == 9) {
+                    changed = true;
+                }
+                num /= 10;
             }
-            if(allSame != digits.length && !flag) count++;
-        }
-        return count;
+            if(isValid && changed) count++;
     }
-    public int[] allDigits (int number){
-        return String.valueOf(number)
-                     .chars()
-                     .map(Character::getNumericValue)
-                     .toArray();
-        
-    }
+    return count;
+ }
 }
