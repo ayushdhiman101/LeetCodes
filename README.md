@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ayushdhiman101/LeetCodes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/ayushdhiman101/LeetCodes/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0392-is-subsequence](https://github.com/ayushdhiman101/LeetCodes/tree/master/0392-is-subsequence) |
+| [0788-rotated-digits](https://github.com/ayushdhiman101/LeetCodes/tree/master/0788-rotated-digits) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/ayushdhiman101/LeetCodes/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 ## Greedy
 |  |
@@ -165,4 +166,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/ayushdhiman101/LeetCodes/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0700-search-in-a-binary-search-tree](https://github.com/ayushdhiman101/LeetCodes/tree/master/0700-search-in-a-binary-search-tree) |
+## Math
+|  |
+| ------- |
+| [0788-rotated-digits](https://github.com/ayushdhiman101/LeetCodes/tree/master/0788-rotated-digits) |
 <!---LeetCode Topics End-->
