@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/ayushdhiman101/LeetCodes/tree/master/0011-container-with-most-water) |
+| [0037-sudoku-solver](https://github.com/ayushdhiman101/LeetCodes/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/ayushdhiman101/LeetCodes/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/ayushdhiman101/LeetCodes/tree/master/0040-combination-sum-ii) |
 | [0051-n-queens](https://github.com/ayushdhiman101/LeetCodes/tree/master/0051-n-queens) |
@@ -47,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/ayushdhiman101/LeetCodes/tree/master/0037-sudoku-solver) |
 | [1319-unique-number-of-occurrences](https://github.com/ayushdhiman101/LeetCodes/tree/master/1319-unique-number-of-occurrences) |
 | [1392-find-the-difference-of-two-arrays](https://github.com/ayushdhiman101/LeetCodes/tree/master/1392-find-the-difference-of-two-arrays) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/ayushdhiman101/LeetCodes/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -151,6 +153,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0037-sudoku-solver](https://github.com/ayushdhiman101/LeetCodes/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/ayushdhiman101/LeetCodes/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/ayushdhiman101/LeetCodes/tree/master/0040-combination-sum-ii) |
 | [0051-n-queens](https://github.com/ayushdhiman101/LeetCodes/tree/master/0051-n-queens) |
@@ -172,4 +175,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0788-rotated-digits](https://github.com/ayushdhiman101/LeetCodes/tree/master/0788-rotated-digits) |
+## Matrix
+|  |
+| ------- |
+| [0037-sudoku-solver](https://github.com/ayushdhiman101/LeetCodes/tree/master/0037-sudoku-solver) |
 <!---LeetCode Topics End-->
