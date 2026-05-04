@@ -15,10 +15,10 @@ class Solution {
     return count;
     }
     public void dfs(char[][] grid, boolean[][] visited, int n, int m, int i, int j) {
-        if(i < 0 || j < 0 || i >= n || j >= m || grid[i][j] == '0' || visited[i][j])
+        if(i < 0 || j < 0 || i >= n || j >= m || grid[i][j] == '0')
             return;
 
-        visited[i][j] = true;
+        grid[i][j] = '0';
 
         dfs(grid, visited, n, m, i - 1, j);
         dfs(grid, visited, n, m, i + 1, j);
