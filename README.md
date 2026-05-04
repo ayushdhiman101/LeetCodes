@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/ayushdhiman101/LeetCodes/tree/master/0048-rotate-image) |
 | [0051-n-queens](https://github.com/ayushdhiman101/LeetCodes/tree/master/0051-n-queens) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ayushdhiman101/LeetCodes/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0200-number-of-islands](https://github.com/ayushdhiman101/LeetCodes/tree/master/0200-number-of-islands) |
 | [0283-move-zeroes](https://github.com/ayushdhiman101/LeetCodes/tree/master/0283-move-zeroes) |
 | [0643-maximum-average-subarray-i](https://github.com/ayushdhiman101/LeetCodes/tree/master/0643-maximum-average-subarray-i) |
 | [0724-find-pivot-index](https://github.com/ayushdhiman101/LeetCodes/tree/master/0724-find-pivot-index) |
@@ -103,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/ayushdhiman101/LeetCodes/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/ayushdhiman101/LeetCodes/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0199-binary-tree-right-side-view](https://github.com/ayushdhiman101/LeetCodes/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/ayushdhiman101/LeetCodes/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/ayushdhiman101/LeetCodes/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/ayushdhiman101/LeetCodes/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/ayushdhiman101/LeetCodes/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
@@ -117,6 +119,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0102-binary-tree-level-order-traversal](https://github.com/ayushdhiman101/LeetCodes/tree/master/0102-binary-tree-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/ayushdhiman101/LeetCodes/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0199-binary-tree-right-side-view](https://github.com/ayushdhiman101/LeetCodes/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/ayushdhiman101/LeetCodes/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/ayushdhiman101/LeetCodes/tree/master/0226-invert-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/ayushdhiman101/LeetCodes/tree/master/0662-maximum-width-of-binary-tree) |
 | [2583-kth-largest-sum-in-a-binary-tree](https://github.com/ayushdhiman101/LeetCodes/tree/master/2583-kth-largest-sum-in-a-binary-tree) |
@@ -182,4 +185,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0037-sudoku-solver](https://github.com/ayushdhiman101/LeetCodes/tree/master/0037-sudoku-solver) |
 | [0048-rotate-image](https://github.com/ayushdhiman101/LeetCodes/tree/master/0048-rotate-image) |
+| [0200-number-of-islands](https://github.com/ayushdhiman101/LeetCodes/tree/master/0200-number-of-islands) |
+## Union-Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/ayushdhiman101/LeetCodes/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
