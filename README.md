@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0037-sudoku-solver](https://github.com/ayushdhiman101/LeetCodes/tree/master/0037-sudoku-solver) |
 | [0039-combination-sum](https://github.com/ayushdhiman101/LeetCodes/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/ayushdhiman101/LeetCodes/tree/master/0040-combination-sum-ii) |
+| [0048-rotate-image](https://github.com/ayushdhiman101/LeetCodes/tree/master/0048-rotate-image) |
 | [0051-n-queens](https://github.com/ayushdhiman101/LeetCodes/tree/master/0051-n-queens) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ayushdhiman101/LeetCodes/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0283-move-zeroes](https://github.com/ayushdhiman101/LeetCodes/tree/master/0283-move-zeroes) |
@@ -174,9 +175,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/ayushdhiman101/LeetCodes/tree/master/0048-rotate-image) |
 | [0788-rotated-digits](https://github.com/ayushdhiman101/LeetCodes/tree/master/0788-rotated-digits) |
 ## Matrix
 |  |
 | ------- |
 | [0037-sudoku-solver](https://github.com/ayushdhiman101/LeetCodes/tree/master/0037-sudoku-solver) |
+| [0048-rotate-image](https://github.com/ayushdhiman101/LeetCodes/tree/master/0048-rotate-image) |
 <!---LeetCode Topics End-->
