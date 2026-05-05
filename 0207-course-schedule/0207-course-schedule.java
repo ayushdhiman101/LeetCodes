@@ -17,20 +17,21 @@ class Solution {
         
         ArrayList<Integer> list = new ArrayList<>();
         for(int i = 0; i < prerequisites.length; i++) {
-            if(prerequisites[i][0] == u)
-                list.add(prerequisites[i][1]);
-        }
-
-        for(int v: list) {
-            if(!visited[v]) {
-                if(dfs(numCourses, prerequisites, v, visited, recPath)) {
+            if(prerequisites[i][0] == u) {
+                int v = prerequisites[i][1];
+                if(!visited[v]) {
+                    if(dfs(numCourses, prerequisites, v, visited, recPath)) {
+                        return true;
+                    }
+                }
+                else if (recPath[v]) {
                     return true;
                 }
             }
-            else if (recPath[v]) {
-                return true;
-            }
         }
+
+            
+        
         recPath[u] = false;
         return false;
     }
