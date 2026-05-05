@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/ayushdhiman101/LeetCodes/tree/master/0011-container-with-most-water) |
+| [0061-rotate-list](https://github.com/ayushdhiman101/LeetCodes/tree/master/0061-rotate-list) |
 | [0283-move-zeroes](https://github.com/ayushdhiman101/LeetCodes/tree/master/0283-move-zeroes) |
 | [0392-is-subsequence](https://github.com/ayushdhiman101/LeetCodes/tree/master/0392-is-subsequence) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/ayushdhiman101/LeetCodes/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -167,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0061-rotate-list](https://github.com/ayushdhiman101/LeetCodes/tree/master/0061-rotate-list) |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/ayushdhiman101/LeetCodes/tree/master/0114-flatten-binary-tree-to-linked-list) |
 ## Stack
 |  |
