@@ -21,18 +21,10 @@ class Solution {
         ans[i][j] = color;
         visited[i][j] = true; 
 
-        if(i - 1 >= 0  && visited[i - 1][j] == false) {
-            dfs(image, i - 1, j, color, ans, visited, n, m, startColor);
-        } 
-        if(j - 1 >= 0 && visited[i][j - 1] == false) {
-            dfs(image, i, j - 1, color, ans, visited, n, m, startColor);
-        } 
-        if(i + 1 < n && visited[i + 1][j] == false) {
-            dfs(image, i + 1, j, color, ans, visited, n, m, startColor);
-        } 
-        if(j + 1 < m && visited[i][j + 1] == false) {
-            dfs(image, i, j + 1, color, ans, visited, n, m, startColor);
-        } 
+        dfs(image, i - 1, j, color, ans, visited, n, m, startColor);
+        dfs(image, i, j - 1, color, ans, visited, n, m, startColor);
+        dfs(image, i + 1, j, color, ans, visited, n, m, startColor);
+        dfs(image, i, j + 1, color, ans, visited, n, m, startColor);
         return;
     }
 }
