@@ -1,30 +1,29 @@
 class Solution {
-    public int[][] floodFill(int[][] image, int i, int j, int color) {
-        int n = image.length;
-        int m = image[0].length;
-        int[][] ans = new int[n][m];
-        for (int k = 0; k < n; k++) {
-            ans[k] = image[k].clone(); 
-        }        
-        boolean visited [][] = new boolean[n][m];
 
-        int startColor =  image[i][j];
+    public int[][] floodFill(int[][] image, int sr, int sc, int color) {
 
-        dfs(image, i, j, color, ans, visited, n, m, startColor);
-        return ans;
+        int startColor = image[sr][sc];
+
+        if(startColor == color)
+            return image;
+
+        dfs(image, sr, sc, color, startColor);
+
+        return image;
     }
 
-    public void dfs(int[][] image, int i, int j, int color, int ans [][], boolean [][] visited, int n, int m, int startColor) {
-        if( i < 0 || j < 0 || i >= n || j >= m || image[i][j] != startColor ||  visited[i][j] == true)
+    public void dfs(int[][] image, int i, int j, int color, int startColor) {
+
+        if(i < 0 || j < 0 || i >= image.length || j >= image[0].length
+           || image[i][j] != startColor) {
             return;
+        }
 
-        ans[i][j] = color;
-        visited[i][j] = true; 
+        image[i][j] = color;
 
-        dfs(image, i - 1, j, color, ans, visited, n, m, startColor);
-        dfs(image, i, j - 1, color, ans, visited, n, m, startColor);
-        dfs(image, i + 1, j, color, ans, visited, n, m, startColor);
-        dfs(image, i, j + 1, color, ans, visited, n, m, startColor);
-        return;
+        dfs(image, i - 1, j, color, startColor);
+        dfs(image, i + 1, j, color, startColor);
+        dfs(image, i, j - 1, color, startColor);
+        dfs(image, i, j + 1, color, startColor);
     }
 }
